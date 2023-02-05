@@ -8,6 +8,10 @@ body {
     padding: 15px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .page-wrapper {
     overflow: hidden;
     max-width: 375px;
@@ -48,6 +52,7 @@ body {
     box-shadow: 0px 0px 30px rgba(128, 127, 127, 0.25);
     border-radius: 10px;
     padding-bottom: 21px;
+    margin-bottom: 12px;
 }
 
 .user-avatar {
@@ -71,4 +76,73 @@ body {
     font-size: 12px;
     line-height: 15px;
     color: #6a6a6a;
+}
+
+.card {
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 30px rgba(128, 127, 127, 0.25);
+    border-radius: 10px;
+    margin-bottom: 12px;
+    padding: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 260px;
+    margin: auto;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.button {
+    display: flex;
+    background-color: #000;
+    flex-shrink: 1;
+    width: 100%;
+    overflow: hidden;
+    object-fit: fill;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(128, 127, 127, 0.5);
+}
+
+.button-icon {
+    background-color: #fff;
+    padding: 10px;
+    object-fit: fill;
+    width: 80px;
+    height: 100%;
+}
+
+.button.vk .button-icon {
+    background-color: #1A4B78;
+}
+
+.button.whats .button-icon {
+    background-color: #59CE72;
+    padding: 5px;
+}
+
+.button.tg .button-icon {
+    background-color: #0088CC;
+}
+
+.button.github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button.github .button-icon {
+    width: auto;
+    background-color: #000;
+    height: 100%;
+}
+
+.button-text {
+    color: #ffffff;
 }
